@@ -12,110 +12,123 @@
 
 <body>
     <header>
-        <div class="container-fluid">
-            <div class="row">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <div class="col-6"><a class="navbar-brand" href="#">Navbar</a></div>
-                    <button class="navbar-toggler" type="button" data-toggle="collapse"
-                        data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="col-6">
-                        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                            <div class="navbar-nav">
-                                <a class="nav-item nav-link active" href="#">Home <span
-                                        class="sr-only">(current)</span></a>
-                                <a class="nav-item nav-link" href="#">About</a>
-                                <a class="nav-item nav-link" href="#">Services</a>
-                                <a class="nav-item nav-link" href="#">Contact</a>
-                            </div>
-                        </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-item nav-link" href="#">About</a>
+                        <a class="nav-item nav-link" href="#">Services</a>
+                        <a class="nav-item nav-link" href="#">Contact</a>
                     </div>
-                </nav>
+                </div>
             </div>
-        </div>
+        </nav>
     </header>
     <main>
-        <section class="section-businessname">
+        <!-- Section Business Name Start -->
+        <section class="section-businessname bg-primary p-5">
             <div class="container-fluid">
                 <div class="row">
-                    <h1>Business Name or Tagline</h1>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere neque ea modi voluptas!
+                    <div class="col-12 p-5">
+                    <h1 class="display-4 text-white mt-5 px-4">Business Name or Tagline</h1>
+                    <p class="lead text-white-50 px-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere neque ea modi voluptas!
                         Laboriosam culpa amet similique dolorum libero
                         iste dicta aut excepturi quaerat atque reiciendis, pariatur, voluptas dignissimos. Iste.</p>
                 </div>
             </div>
+            </div>
         </section>
+        <!-- Section Business Name End -->
+          <!-- Section What We Do Start -->
         <section class="section-whatwedo">
             <div class="container">
                 <div class="row">
-                    <div class="col-8">
-                        <h5>What We Do</h5>
+                    <div class="col-8 my-5">
+                        <h2>What We Do</h2>
                         <hr>
                         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A deserunt neque tempore recusandae
                             animi soluta quasi? Asperiores rem dolore eaque vel, porro, soluta unde debitis aliquam
-                            laboriosam. Repellat explicabo, maiores!
+                            laboriosam. Repellat explicabo, maiores!</p>
 
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur
+                          <p>  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Omnis optio neque consectetur
                             consequatur magni in nisi, natus beatae quidem quam odit commodi ducimus totam eum, alias,
                             adipisci nesciunt voluptate. Voluptatum.
                         </p>
-                        <button type="button" class="btn btn-primary">Call to Action >></button>
+                        <button type="button" class="btn btn-primary btn-lg">Call to Action »</button>
                     </div>
-                    <div class="col-4">
-                        <h5>Contact Us</h5>
+                    <div class="col-4 my-5">
+                        <h2>Contact Us</h2>
                         <hr>
-                        <h6>Start Bootstrap</h6>
-                        <address>3481 Melrose Place
+                        <strong>Start Bootstrap</strong> 
+                        <address class="w-50">3481 Melrose Place
                             Beverly Hills, CA 90210
-                            P: (123) 456-7890
-                            E: name@example.com
+                            </address>
+                            <address class="w-50">
+                           <abbr class="mr-1" title="phone">P:</abbr>(123) 456-7890
+                        <abbr title="email">E:</abbr><a href="mailto:#" class="ml-1">name@example.com</a>  
                         </address>
                     </div>
                 </div>
             </div>
         </section>
+            <!-- Section What We Do End -->
+            <!-- Section Business Cards Start -->
         <section class="section-business-cards">
-<div class="container">
-    <div class="row">
-        <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+            <div class="container">
+                <div class="row">
+                    <div class="col-4 mb-5">
+                        <div class="card h-100" style="width: 22rem;">
+                            <img src="images/cardimage.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                     Sapiente esse necessitatibus neque sequi doloribus.</p>
+                            </div>
+                            <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                                  </div>
                         </div>
-                      </div>
-        </div>
-        <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="col-4 mb-5">
+                        <div class="card h-100" style="width: 22rem;">
+                            <img src="images/cardimage.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Sapiente esse necessitatibus neque sequi doloribus totam ut praesentium aut.</p>
+                            </div>
+                            <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                                  </div>
                         </div>
-                      </div>
-        </div>
-        <div class="col-4">
-                <div class="card" style="width: 18rem;">
-                        <img src="..." class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                          <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                    <div class="col-4 mb-5">
+                        <div class="card h-100" style="width: 22rem;">
+                            <img src="images/cardimage.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h4 class="card-title">Card title</h4>
+                                <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                                    Sapiente esse necessitatibus neque.</p>
+                            </div>
+                            <div class="card-footer">
+                                    <a href="#" class="btn btn-primary">Find Out More!</a>
+                                  </div>
                         </div>
-                      </div>
-        </div>
-    </div>
-</div>
+                    </div>
+                </div>
+            </div>
         </section>
+        <!-- Section Business Cards End -->
     </main>
-    <footer>
+    <footer class="bg-dark py-5">
         <div class="container-fluid">
-                <p>Copyright&copy;Your Website 2019</p>
+            <p class=" m-0 text-center text-white">Copyright &copy; Your Website 2019</p>
         </div>
     </footer>
 </body>

@@ -12,7 +12,7 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <nav class="navbar navbar-expand-lg navbar-dark fixed-top bg-dark px-4 py-1">
             <a href="#" class="navbar-brand">Navbar</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,18 +26,18 @@
                     <li class="nav-item">
                         <a href="#" class="nav-link">Link</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                             data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    </li>
-                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                        <a class="dropdown-menu" href="#">Action</a>
-                        <a class="dropdown-menu" href="#">Another Action</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                    </div>
-                    <li class="nav-item">
-                        <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-menu" href="#">Action</a>
+                            <a class="dropdown-menu" href="#">Another Action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
                     </li>
                 </ul>
                 <form class="form-inline my-2 my-lg-0">
@@ -48,55 +48,58 @@
         </nav>
     </header>
     <main>
-        <section class="section-helloworld">
+        <!-- Section Hello World Start -->
+        <section class="section-helloworld py-5">
+            <div class="jumbotron jumbotron-fluid p-5">
+                <div class="container p-4">
+                    <h1 class="display-3">Hello, world!</h1>
+                    <p>This is a template for a simple marketing or informational website. It includes a large
+                        callout called a
+                        jumbotron and three supporting pieces of content. Use it as a starting point to create
+                        something more unique.</p>
+                    <button type="button" class="btn btn-primary btn-lg">Learn more »
+                </div></button>
+            </div>
+            </div>
+        </section>
+        <!-- Section Hello World End -->
+        <!-- Section Heading Start -->
+        <section class="section-heading mt-n5">
             <div class="container">
                 <div class="row">
-                    <div class="col-12">
-                        <h1>Hello World</h1>
-                        <p>This is a template for a simple marketing or informational website. It includes a large
-                            callout called a
-                            jumbotron and three supporting pieces of content. Use it as a starting point to create
-                            something more unique.</p>
-                        <button type="button" class="btn btn-primary">Learn more >></button>
+                    <div class="col-4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus.
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+                            Donec sed odio dui.</p>
+                        <button class="btn btn-secondary">View details »</button>
+                    </div>
+                    <div class="col-4">
+                        <h2>Heading</h2>
+                        <p>Donec id elit non mi porta gravida at eget metus.
+                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
+                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
+                            Donec sed odio dui.</p>
+                        <button class="btn btn-secondary">View details »</button>
+                    </div>
+                    <div class="col-4">
+                        <h2>Heading</h2>
+                        <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam.
+                            Vestibulum id ligula porta felis euismod semper. Fusce dapibus,
+                            tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet
+                            risus.</p>
+                        <button class="btn btn-secondary">View details »</button>
                     </div>
                 </div>
             </div>
         </section>
-        <section class="section-heading">
-            <div class="container">
-                <div class="row">
-                    <div class="col-4">
-                        <h5>Heading</h5>
-                        <p>Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-                            Donec sed odio dui.</p>
-                        <button class="btn btn-secondary">View details>></button>
-                    </div>
-                    <div class="col-4">
-                        <h5>Heading</h5>
-                        <p>Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-                            Donec sed odio dui.</p>
-                        <button class="btn btn-secondary">View details>></button>
-                    </div>
-                    <div class="col-4">
-                        <h5>Heading</h5>
-                        <p>Donec id elit non mi porta gravida at eget metus.
-                            Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh,
-                            ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod.
-                            Donec sed odio dui.</p>
-                        <button class="btn btn-secondary">View details>></button>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <!-- Section Heading End -->
     </main>
     <footer>
         <div class="container">
-            <hr>
-            <p>&copy;Company 2017-2019</p>
+            <hr class="mt-4">
+            <p><span class="mr-1">&copy;</span>Company 2017-2019</p>
         </div>
     </footer>
 </body>
